@@ -12,5 +12,8 @@
   "dependencies": {
     "bootstrap": "^5.2.3",
     "sax": "^1.2.4"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
   }
 }
