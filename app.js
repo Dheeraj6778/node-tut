@@ -1,19 +1,31 @@
-const http=require('http');
-const server=http.createServer((req,res)=>{
-    if(req.url==='/'){
-        console.log('home page');
-        res.write('we are in the home page');
-        res.end();
-    }
-    if(req.url==='/about'){
-        console.log('about page');
-        res.write('this is teh about page');
-        res.end();
-    }
-    res.end(`
-        <h1>page doesn't exist</h1>
-        <a href="/"> back home</a>
-    `)
-});
+// const fs=require('fs');
+// const util = require('util');
+// const readPromise = util.promisify(fs.readFile);
+// const writePromise = util.promisify(fs.writeFile);
+// const getText=(path)=>{
+//     return new Promise((resolve,reject)=>{
+//         fs.readFile(path,'utf-8',(err,data)=>{
+//             if(err){
+//                 reject(err);
+//             }
+//             else{
+//                 resolve(data);
+//             }
+//         })
+//     })
+// }
 
-server.listen(5000);    
+// const start=async ()=>{
+//     try{
+//         const text=await readPromise('./content/first.txt','utf-8');
+//         const second=await readPromise('./content/second.txt','utf-8');
+//         await writePromise('./content/write.txt',"file data written",'utf-8');
+//         console.log(text,second);
+//     }
+//     catch(error){
+//         console.log(error);
+//     }
+    
+// }
+// start();
+const 
